@@ -1,0 +1,77 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+}
+
+h2 {
+	padding: 1em 1em;
+	text-transform: uppercase;
+}
+.wrapper {
+	display: grid;
+	margin-top: 15px;
+}
+
+.auto-fit {
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.auto-fill {
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2rem;
+	border: 1px solid black;
+}
+
+.gold {
+	background-color: gold;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.white {
+	background-color: white;
+}
+
+.tomato {
+	background-color: tomato;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.cadet {
+	background-color: cadetblue;
+}
+
+.box {
+	display: grid;
+	grid-template-columns: 100px 100px;
+	grid-template-rows: 100px 100px;
+	grid-auto-flow: row;
+}
+
+.box-two {
+	grid-auto-flow: column;
+}
